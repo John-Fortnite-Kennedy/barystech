@@ -1,0 +1,7 @@
+{
+  "name": "jvteam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

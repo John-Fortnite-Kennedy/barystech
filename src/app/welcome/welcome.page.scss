@@ -1,0 +1,187 @@
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  
+  .wrapper {
+    -webkit-box-shadow: 30px 30px 60px 90px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .loginForm {
+    width: 100%;
+  
+    ion-input {
+      border-radius: 0.5rem;
+      background-color: #f6f6f6;
+      --padding-top: 1rem;
+      --padding-bottom: 1rem;
+      --padding-start: 1rem;
+      --padding-end: 1rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+  
+    ion-button {
+      --border-radius: 0.5rem;
+      font-size: 0.8rem;
+      height: 3rem;
+      margin: 0;
+    }
+  }
+  
+  .loginFooter {
+    padding-top: 2rem;
+  
+    a {
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  ///////////////////
+  
+  *{
+    color: black;
+    font-family:Montserrat !important;
+  }
+  
+  .header{
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  }
+  
+  ion-content{
+    --background: rgb(231, 228, 228);
+  }
+  .toolbar-background{
+    background: none !important;
+  }
+  ion-title{
+    padding: 1rem 3rem;
+  }
+  
+  ion-button{
+    --background: linear-gradient(to right, #0f0c29, #2b3363, #242b3e);
+  }
+  
+  .cont{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+
+    .info{
+      height: auto;
+      text-align: start;
+      width: 30%;
+    }
+  }
+  
+  
+  .card{
+    flex: 1 1 auto;
+    width: 70%;
+  
+    .card_content{
+      display: flex;
+      height: 100%;
+      padding: 0;
+      background-color: #222324;
+      align-items: center;
+  
+      .signIn{
+        height:100%;
+        width: 100%;
+        background-color: #222324;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+      .signUp{
+        height:100%;
+        width: 100%;
+        background-color: #353935;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        
+
+        .signUpContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5%;
+            flex-direction: column;
+            height:100%;
+            width: 30vw;
+        }
+      }
+    }
+  }
+  
+  .visible{
+    display: block;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  @media(min-width: 1200px) {
+    .cont {
+      flex-direction: row;
+    }
+    .info{
+      padding: 3rem 1rem;
+      width: 80%;
+    }
+    .card_content{
+      flex-direction: row;
+      .signIn{
+        
+      }
+    }
+    h1{
+      font-size: 2.5rem;
+    }
+    
+    span{
+      font-size: 1.7rem;
+    }
+  }
+  
+  @media(max-width: 1200px) {
+    .cont {
+      flex-direction: column;
+    }
+    .info{
+      padding: 3rem 1rem;
+      width: 100%;
+    }
+    .card_content{
+      flex-direction: column-reverse;
+    }
+    h1{
+      font-size: 2.5rem;
+    }
+    
+    span{
+      font-size: 1rem;
+    }
+  }

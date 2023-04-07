@@ -1,0 +1,92 @@
+<ion-header collapse="fade" class="ion-no-border header">
+  <ion-toolbar>
+    <ion-title>Barys</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <!-- <div class="content">
+    <div class="wrapper">
+    <div class="loginForm">
+      <ion-input [(ngModel)]="phone" type="email" placeholder="Телефон"></ion-input>
+      <ion-input [(ngModel)]="password" type="password" placeholder="Пароль"></ion-input>
+      <ion-button type="subimt" expand="block" [disabled]="phone=='' || password==''" (click)="tryAuth(phone, password)">{{segmentValue}}</ion-button>
+    </div>
+    <ion-segment value="логин" mode="ios" style="margin-top: 1rem;" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="Логин">
+        <ion-label>Логин</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Регистрация">
+        <ion-label>Регистрация</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <div class="loginFooter">
+      <a href="">Забыли Пароль?</a>
+    </div>
+  </div>
+  </div> -->
+  <div class="cont">
+    <div class="info">
+      <h1>Lorem ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugit explicabo nobis repudiandae illum doloribus
+        placeat, quia, nemo quis sit, deleniti tempora assumenda?
+      </p>
+      <p>
+        Corrupti fuga doloribus illo error reprehenderit
+        cupiditate.
+      </p>
+    </div>
+    <ion-card class="card" style="margin: 0;height: 60vh;">
+      <ion-card-content class="card_content" id="wrap">
+
+        <div id="sign" class="signIn">
+          <div class="wrapper">
+            <div class="loginForm" [ngClass]="action? 'visible' : 'hidden'">
+              <ion-input [(ngModel)]="phone" type="email" placeholder="Телефон"></ion-input>
+              <ion-input [(ngModel)]="password" type="password" placeholder="Пароль"></ion-input>
+              <ion-button type="subimt" expand="block"
+                [disabled]="phone=='' || password==''">{{segmentValue}}</ion-button>
+            </div>
+            <div class="loginForm" [ngClass]="action? 'hidden' : 'visible'">
+              <ion-input [(ngModel)]="phone" type="email" placeholder="Телефон"></ion-input>
+              <ion-button type="subimt" expand="block" [disabled]="phone==''">Регистрация</ion-button>
+            </div>
+            <div class="loginFooter" [ngClass]="action? 'visible' : 'hidden'">
+              <a href="">Забыли Пароль?</a>
+            </div>
+          </div>
+        </div>
+        <div id="reg" class="signUp">
+          <div class="signUpContainer">
+            <h1 *ngIf="action" class="go_right">Welcome</h1>
+            <h1 *ngIf="!action" class="go_left">Not Welcome</h1>
+            <br>
+            <div *ngIf="action">
+              <span class="go_right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugit explicabo nobis repudiandae illum
+                doloribus
+                placeat, quia, nemo quis sit, deleniti tempora assumenda?
+              </span><br>
+              <span class="go_right">
+                Corrupti fuga doloribus illo error reprehenderit
+                cupiditate.
+              </span>
+            </div>
+            <div *ngIf="!action">
+              <span class="go_left">
+                Bruh
+              </span><br>
+              <span class="go_left">
+                cringe
+              </span>
+            </div>
+            <br>
+            <ion-button type="button" expand="block" (click)="swap()">{{action? "Регистрация" : "Логин"}}</ion-button>
+          </div>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

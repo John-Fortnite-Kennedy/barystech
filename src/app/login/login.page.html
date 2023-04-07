@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-input label="Phone number" placeholder="Enter phone number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Password" placeholder="Enter password"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="login()" expand="block">Войти</ion-button>
+
+</ion-content>

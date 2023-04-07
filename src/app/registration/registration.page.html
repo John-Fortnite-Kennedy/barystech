@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registration</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-input label="Phone number" placeholder="Enter phone number"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="navigateToVerifyPage()" expand="block">Продолжить регистрацию</ion-button>
+
+</ion-content>

@@ -1,6 +1,5 @@
 <template>
-  <q-page class="column">
-    <example-component></example-component>
+  <q-page class="column" style="padding: 5%;">
     <example-component></example-component>
   </q-page>
 </template>
